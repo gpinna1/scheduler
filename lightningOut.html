@@ -1,11 +1,10 @@
-<script src="https://test-sito-facile.cs84.force.com/scheduler/lightning/lightning.out.js">console.log('primo script');</script>
+<script src="https://test-sito-facile.cs84.force.com/scheduler/lightning/lightning.out.js"></script>
+
 <script>   
 	$Lightning.use("runtime_appointmentbooking:lightningOutGuest",    // name of the Lightning app
      function() {
 			console.log('prova 1');	 
             $Lightning.createComponent(
-//               "runtime_appointmentbooking:flowReview", {},
-				console.log('prova 2');
                 "lightning:flow",     // top-level component of your app
                 { },                  // attributes to set on the component when created
                 "lightningLocator",   // the DOM location to insert the component
