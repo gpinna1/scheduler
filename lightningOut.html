@@ -1,9 +1,10 @@
 <script src="https://test-sito-facile.cs84.force.com/scheduler/lightning/lightning.out.js"></script>
-<script>   $Lightning.use("runtime_appointmentbooking:lightningOutGuest",    // name of the Lightning app
+<script>   
+	$Lightning.use("runtime_appointmentbooking:lightningOutGuest",    // name of the Lightning app
      function() {                  
             $Lightning.createComponent(
-//                 "runtime_appointmentbooking:flowReview", {},
-                "lightning:flow", // top-level component of your app
+//               "runtime_appointmentbooking:flowReview", {},
+                "lightning:flow",     // top-level component of your app
                 { },                  // attributes to set on the component when created
                 "lightningLocator",   // the DOM location to insert the component
                 function(cmp) {
@@ -14,3 +15,4 @@
         }, 'https://test-sito-facile.cs84.force.com/scheduler'  // Community endpoint
     );
 </script>
+
