@@ -1,0 +1,16 @@
+<script src="https://test-sito-facile.cs84.force.com/scheduler/lightning/lightning.out.js"></script>
+<script>   $Lightning.use("runtime_appointmentbooking:lightningOutGuest",    // name of the Lightning app
+     function() {                  
+            $Lightning.createComponent(
+//                 "runtime_appointmentbooking:flowReview", {},
+                "lightning:flow", // top-level component of your app
+                { },                  // attributes to set on the component when created
+                "lightningLocator",   // the DOM location to insert the component
+                function(cmp) {
+                    console.log('Hi from callback');// callback when component is created and active on the page
+                    cmp.startFlow('Inbound_New_Guest_Appointment');
+                }
+            );
+        }, 'https://test-sito-facile.cs84.force.com/scheduler'  // Community endpoint
+    );
+</script>
